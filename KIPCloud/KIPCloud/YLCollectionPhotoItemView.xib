@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="YLCollectionPhotoItemView">
+            <rect key="frame" x="0.0" y="0.0" width="139" height="127"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AP4-UT-snf">
+                    <rect key="frame" x="0.0" y="0.0" width="139" height="127"/>
+                    <connections>
+                        <action selector="btnContentClicked:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="BqE-N3-tdM"/>
+                        <action selector="btnIconClicked:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="Y0g-nI-gVQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nht-2f-f2r">
+                    <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="kus-sy-Okq"/>
+                        <constraint firstAttribute="height" constant="20" id="nfm-lK-nqI"/>
+                    </constraints>
+                    <connections>
+                        <action selector="btnIconClicked:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="5L6-Lb-McS"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="AP4-UT-snf" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="JNP-9a-3Do"/>
+                <constraint firstItem="Nht-2f-f2r" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="Rxr-g2-6AL"/>
+                <constraint firstItem="AP4-UT-snf" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="XnC-6K-mim"/>
+                <constraint firstAttribute="trailing" secondItem="AP4-UT-snf" secondAttribute="trailing" id="a9i-sX-qoQ"/>
+                <constraint firstAttribute="bottom" secondItem="AP4-UT-snf" secondAttribute="bottom" id="jdg-lh-T7D"/>
+                <constraint firstItem="Nht-2f-f2r" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="sGe-aW-AEF"/>
+            </constraints>
+            <connections>
+                <outlet property="btnContent" destination="AP4-UT-snf" id="T0h-Mt-duy"/>
+                <outlet property="btnIcon" destination="Nht-2f-f2r" id="raP-Wv-xl8"/>
+            </connections>
+            <point key="canvasLocation" x="-529.5" y="-24.5"/>
+        </collectionReusableView>
+    </objects>
+</document>

@@ -1,0 +1,941 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A2E83811F0CBA3B004DF838 /* IOTCAPIs.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A2E83801F0CBA3B004DF838 /* IOTCAPIs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AA2FCCE1F0CC2C700A41824 /* ImageBuffInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AA2FCCD1F0CC2C700A41824 /* ImageBuffInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E2A43AB15FEEBE6000A2974 /* adpcm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 614AF7BF15A667AD009869D3 /* adpcm.cpp */; };
+		3E2A43AC15FEEBE6000A2974 /* AudioRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 614AF7C215A667AD009869D3 /* AudioRecorder.m */; };
+		3E2A43AD15FEEBE6000A2974 /* Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = 614AF7C415A667AD009869D3 /* Camera.m */; };
+		3E2A43AE15FEEBE6000A2974 /* ip_block_fifo.c in Sources */ = {isa = PBXBuildFile; fileRef = 614AF7C615A667AD009869D3 /* ip_block_fifo.c */; };
+		3E2A43AF15FEEBE6000A2974 /* Monitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 614AF7C915A667AD009869D3 /* Monitor.m */; };
+		3E2A43B015FEEBE6000A2974 /* OpenALPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 614AF7CB15A667AD009869D3 /* OpenALPlayer.m */; };
+		3E2A43B115FEEBE6000A2974 /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 614AF7CD15A667AD009869D3 /* Queue.m */; };
+		3E2A43B215FEEBE6000A2974 /* AVChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 614AF7CF15A667AD009869D3 /* AVChannel.m */; };
+		3E2A43B315FEEBE6000A2974 /* codec_g726.c in Sources */ = {isa = PBXBuildFile; fileRef = 6101937915B5494F008E5D04 /* codec_g726.c */; };
+		3E2A43B415FEEBE6000A2974 /* g72x.c in Sources */ = {isa = PBXBuildFile; fileRef = 6101937B15B5494F008E5D04 /* g72x.c */; };
+		3E2A43B515FEEBE6000A2974 /* g711.c in Sources */ = {isa = PBXBuildFile; fileRef = 6101937D15B5494F008E5D04 /* g711.c */; };
+		3E2A43B615FEEBE6000A2974 /* g726_16.c in Sources */ = {isa = PBXBuildFile; fileRef = 6101937E15B5494F008E5D04 /* g726_16.c */; };
+		3E2A43B715FEEBE6000A2974 /* g726_24.c in Sources */ = {isa = PBXBuildFile; fileRef = 6101937F15B5494F008E5D04 /* g726_24.c */; };
+		3E2A43B815FEEBE6000A2974 /* g726_32.c in Sources */ = {isa = PBXBuildFile; fileRef = 6101938015B5494F008E5D04 /* g726_32.c */; };
+		3E2A43B915FEEBE6000A2974 /* g726_40.c in Sources */ = {isa = PBXBuildFile; fileRef = 6101938115B5494F008E5D04 /* g726_40.c */; };
+		3E2A43BC15FEEBE6000A2974 /* libmpg123.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E550AB15D9E92600AA6184 /* libmpg123.a */; };
+		3E2A43BD15FEEBE6000A2974 /* libSpeex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E550B415D9E93700AA6184 /* libSpeex.a */; };
+		3E2A43C015FEEBE6000A2974 /* Camera.h in Headers */ = {isa = PBXBuildFile; fileRef = 614AF7C315A667AD009869D3 /* Camera.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E2A43C115FEEBE6000A2974 /* Monitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 614AF7C815A667AD009869D3 /* Monitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E2A43C215FEEBE6000A2974 /* AVFRAMEINFO.h in Headers */ = {isa = PBXBuildFile; fileRef = 61B948FE15A66B200000BCF8 /* AVFRAMEINFO.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E2A43C315FEEBE6000A2974 /* AVIOCTRLDEFs.h in Headers */ = {isa = PBXBuildFile; fileRef = 61B948FF15A66B200000BCF8 /* AVIOCTRLDEFs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E2A43C415FEEBE6000A2974 /* IOTCamera-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 614AF7AB15A6675F009869D3 /* IOTCamera-Prefix.pch */; };
+		3E2A43C515FEEBE6000A2974 /* adpcm.h in Headers */ = {isa = PBXBuildFile; fileRef = 614AF7C015A667AD009869D3 /* adpcm.h */; };
+		3E2A43C615FEEBE6000A2974 /* AudioRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 614AF7C115A667AD009869D3 /* AudioRecorder.h */; };
+		3E2A43C715FEEBE6000A2974 /* Camera2.h in Headers */ = {isa = PBXBuildFile; fileRef = 614AF7C515A667AD009869D3 /* Camera2.h */; };
+		3E2A43C815FEEBE6000A2974 /* ip_block_fifo.h in Headers */ = {isa = PBXBuildFile; fileRef = 614AF7C715A667AD009869D3 /* ip_block_fifo.h */; };
+		3E2A43C915FEEBE6000A2974 /* OpenALPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 614AF7CA15A667AD009869D3 /* OpenALPlayer.h */; };
+		3E2A43CA15FEEBE6000A2974 /* Queue.h in Headers */ = {isa = PBXBuildFile; fileRef = 614AF7CC15A667AD009869D3 /* Queue.h */; };
+		3E2A43CB15FEEBE6000A2974 /* AVChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 614AF7CE15A667AD009869D3 /* AVChannel.h */; };
+		3E2A43CC15FEEBE6000A2974 /* platform_Config.h in Headers */ = {isa = PBXBuildFile; fileRef = 61B9490515A66B200000BCF8 /* platform_Config.h */; };
+		3E2A43CD15FEEBE6000A2974 /* codec_g726.h in Headers */ = {isa = PBXBuildFile; fileRef = 6101937A15B5494F008E5D04 /* codec_g726.h */; };
+		3E2A43CE15FEEBE6000A2974 /* g72x.h in Headers */ = {isa = PBXBuildFile; fileRef = 6101937C15B5494F008E5D04 /* g72x.h */; };
+		3E2A43CF15FEEBE6000A2974 /* private.h in Headers */ = {isa = PBXBuildFile; fileRef = 6101938215B5494F008E5D04 /* private.h */; };
+		3E8E7E0A15FF23CB00B4EE82 /* h264.m in Sources */ = {isa = PBXBuildFile; fileRef = 610258FF15CB6E250007A553 /* h264.m */; };
+		3E8E7E0B15FF23CE00B4EE82 /* mpeg4.m in Sources */ = {isa = PBXBuildFile; fileRef = 6136236315D0A96C00CBCB22 /* mpeg4.m */; };
+		3E8E7E5D1606CE0F00B4EE82 /* yuv420torgb24.c in Sources */ = {isa = PBXBuildFile; fileRef = 6112B5AB15D8E96B0018E7A7 /* yuv420torgb24.c */; };
+		6101938315B5494F008E5D04 /* codec_g726.c in Sources */ = {isa = PBXBuildFile; fileRef = 6101937915B5494F008E5D04 /* codec_g726.c */; };
+		6101938415B5494F008E5D04 /* codec_g726.h in Headers */ = {isa = PBXBuildFile; fileRef = 6101937A15B5494F008E5D04 /* codec_g726.h */; };
+		6101938515B5494F008E5D04 /* g72x.c in Sources */ = {isa = PBXBuildFile; fileRef = 6101937B15B5494F008E5D04 /* g72x.c */; };
+		6101938615B5494F008E5D04 /* g72x.h in Headers */ = {isa = PBXBuildFile; fileRef = 6101937C15B5494F008E5D04 /* g72x.h */; };
+		6101938715B5494F008E5D04 /* g711.c in Sources */ = {isa = PBXBuildFile; fileRef = 6101937D15B5494F008E5D04 /* g711.c */; };
+		6101938815B5494F008E5D04 /* g726_16.c in Sources */ = {isa = PBXBuildFile; fileRef = 6101937E15B5494F008E5D04 /* g726_16.c */; };
+		6101938915B5494F008E5D04 /* g726_24.c in Sources */ = {isa = PBXBuildFile; fileRef = 6101937F15B5494F008E5D04 /* g726_24.c */; };
+		6101938A15B5494F008E5D04 /* g726_32.c in Sources */ = {isa = PBXBuildFile; fileRef = 6101938015B5494F008E5D04 /* g726_32.c */; };
+		6101938B15B5494F008E5D04 /* g726_40.c in Sources */ = {isa = PBXBuildFile; fileRef = 6101938115B5494F008E5D04 /* g726_40.c */; };
+		6101938C15B5494F008E5D04 /* private.h in Headers */ = {isa = PBXBuildFile; fileRef = 6101938215B5494F008E5D04 /* private.h */; };
+		614AF7AC15A6675F009869D3 /* IOTCamera-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 614AF7AB15A6675F009869D3 /* IOTCamera-Prefix.pch */; };
+		614AF7D015A667AD009869D3 /* adpcm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 614AF7BF15A667AD009869D3 /* adpcm.cpp */; };
+		614AF7D115A667AD009869D3 /* adpcm.h in Headers */ = {isa = PBXBuildFile; fileRef = 614AF7C015A667AD009869D3 /* adpcm.h */; };
+		614AF7D215A667AD009869D3 /* AudioRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 614AF7C115A667AD009869D3 /* AudioRecorder.h */; };
+		614AF7D315A667AD009869D3 /* AudioRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 614AF7C215A667AD009869D3 /* AudioRecorder.m */; };
+		614AF7D415A667AD009869D3 /* Camera.h in Headers */ = {isa = PBXBuildFile; fileRef = 614AF7C315A667AD009869D3 /* Camera.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		614AF7D515A667AD009869D3 /* Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = 614AF7C415A667AD009869D3 /* Camera.m */; };
+		614AF7D615A667AD009869D3 /* Camera2.h in Headers */ = {isa = PBXBuildFile; fileRef = 614AF7C515A667AD009869D3 /* Camera2.h */; };
+		614AF7D715A667AD009869D3 /* ip_block_fifo.c in Sources */ = {isa = PBXBuildFile; fileRef = 614AF7C615A667AD009869D3 /* ip_block_fifo.c */; };
+		614AF7D815A667AD009869D3 /* ip_block_fifo.h in Headers */ = {isa = PBXBuildFile; fileRef = 614AF7C715A667AD009869D3 /* ip_block_fifo.h */; };
+		614AF7D915A667AD009869D3 /* Monitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 614AF7C815A667AD009869D3 /* Monitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		614AF7DA15A667AD009869D3 /* Monitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 614AF7C915A667AD009869D3 /* Monitor.m */; };
+		614AF7DB15A667AD009869D3 /* OpenALPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 614AF7CA15A667AD009869D3 /* OpenALPlayer.h */; };
+		614AF7DC15A667AD009869D3 /* OpenALPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 614AF7CB15A667AD009869D3 /* OpenALPlayer.m */; };
+		614AF7DD15A667AD009869D3 /* Queue.h in Headers */ = {isa = PBXBuildFile; fileRef = 614AF7CC15A667AD009869D3 /* Queue.h */; };
+		614AF7DE15A667AD009869D3 /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 614AF7CD15A667AD009869D3 /* Queue.m */; };
+		614AF7DF15A667AD009869D3 /* AVChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 614AF7CE15A667AD009869D3 /* AVChannel.h */; };
+		614AF7E015A667AD009869D3 /* AVChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 614AF7CF15A667AD009869D3 /* AVChannel.m */; };
+		61B9490715A66B210000BCF8 /* AVFRAMEINFO.h in Headers */ = {isa = PBXBuildFile; fileRef = 61B948FE15A66B200000BCF8 /* AVFRAMEINFO.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61B9490815A66B210000BCF8 /* AVIOCTRLDEFs.h in Headers */ = {isa = PBXBuildFile; fileRef = 61B948FF15A66B200000BCF8 /* AVIOCTRLDEFs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61B9490E15A66B210000BCF8 /* platform_Config.h in Headers */ = {isa = PBXBuildFile; fileRef = 61B9490515A66B200000BCF8 /* platform_Config.h */; };
+		61E550C915D9EACB00AA6184 /* libmpg123.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E550AB15D9E92600AA6184 /* libmpg123.a */; };
+		61E550CA15D9EACB00AA6184 /* libSpeex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E550B415D9E93700AA6184 /* libSpeex.a */; };
+		61E550FC15D9F7A400AA6184 /* libH264Dec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E550FB15D9F71C00AA6184 /* libH264Dec.a */; };
+		895133681ADB52CA00B2738C /* PFZBRecordingOBJ.h in Headers */ = {isa = PBXBuildFile; fileRef = 895133661ADB52CA00B2738C /* PFZBRecordingOBJ.h */; };
+		895133691ADB52CA00B2738C /* ZHPFVideoRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 895133671ADB52CA00B2738C /* ZHPFVideoRecorder.h */; };
+		897345921AD79F3800500F79 /* g711au.c in Sources */ = {isa = PBXBuildFile; fileRef = 897345901AD79F3800500F79 /* g711au.c */; };
+		897345931AD79F3800500F79 /* g711au.h in Headers */ = {isa = PBXBuildFile; fileRef = 897345911AD79F3800500F79 /* g711au.h */; };
+		B0934FDC1C5675E4000ECB44 /* ZHPFVideoRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = B0934FDA1C5675E4000ECB44 /* ZHPFVideoRecorder.h */; };
+		B0934FDD1C5675E4000ECB44 /* ZHPFVideoRecorder.mm in Sources */ = {isa = PBXBuildFile; fileRef = B0934FDB1C5675E4000ECB44 /* ZHPFVideoRecorder.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E2A43D715FEECD4000A2974 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61E550AC15D9E93600AA6184 /* Speex.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = Speex;
+		};
+		3E2A43D915FEECD9000A2974 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61E550A315D9E92600AA6184 /* mpg123.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D852EA8114502F3B003BF6C4;
+			remoteInfo = mpg123;
+		};
+		3E2A43DB15FEECDE000A2974 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61E550AC15D9E93600AA6184 /* Speex.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = Speex;
+		};
+		3E2A43DD15FEECE1000A2974 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61E550A315D9E92600AA6184 /* mpg123.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D852EA8114502F3B003BF6C4;
+			remoteInfo = mpg123;
+		};
+		3E2A43DF15FEECE6000A2974 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61E550F315D9F71B00AA6184 /* H264Dec.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = H264Dec;
+		};
+		61E550AA15D9E92600AA6184 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61E550A315D9E92600AA6184 /* mpg123.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D852EA8214502F3B003BF6C4;
+			remoteInfo = mpg123;
+		};
+		61E550B315D9E93700AA6184 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61E550AC15D9E93600AA6184 /* Speex.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = Speex;
+		};
+		61E550FA15D9F71C00AA6184 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61E550F315D9F71B00AA6184 /* H264Dec.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = H264Dec;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A2E83801F0CBA3B004DF838 /* IOTCAPIs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IOTCAPIs.h; path = IOTCamera/include/IOTCAPIs.h; sourceTree = SOURCE_ROOT; };
+		2AA2FCCD1F0CC2C700A41824 /* ImageBuffInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageBuffInfo.h; path = IOTCamera/include/ImageBuffInfo.h; sourceTree = SOURCE_ROOT; };
+		3E2A43D315FEEBE6000A2974 /* IOTCamera_MJ4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOTCamera_MJ4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E2A43D615FEEC49000A2974 /* IOTCamera_MJ4-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "IOTCamera_MJ4-Info.plist"; path = "IOTCamera_MJ4/IOTCamera_MJ4-Info.plist"; sourceTree = "<group>"; };
+		6101935115B505AE008E5D04 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		6101935315B505B4008E5D04 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		6101937915B5494F008E5D04 /* codec_g726.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = codec_g726.c; path = IOTCamera/codec_g726.c; sourceTree = SOURCE_ROOT; };
+		6101937A15B5494F008E5D04 /* codec_g726.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = codec_g726.h; path = IOTCamera/codec_g726.h; sourceTree = SOURCE_ROOT; };
+		6101937B15B5494F008E5D04 /* g72x.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = g72x.c; path = IOTCamera/g72x.c; sourceTree = SOURCE_ROOT; };
+		6101937C15B5494F008E5D04 /* g72x.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = g72x.h; path = IOTCamera/g72x.h; sourceTree = SOURCE_ROOT; };
+		6101937D15B5494F008E5D04 /* g711.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = g711.c; path = IOTCamera/g711.c; sourceTree = SOURCE_ROOT; };
+		6101937E15B5494F008E5D04 /* g726_16.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = g726_16.c; path = IOTCamera/g726_16.c; sourceTree = SOURCE_ROOT; };
+		6101937F15B5494F008E5D04 /* g726_24.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = g726_24.c; path = IOTCamera/g726_24.c; sourceTree = SOURCE_ROOT; };
+		6101938015B5494F008E5D04 /* g726_32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = g726_32.c; path = IOTCamera/g726_32.c; sourceTree = SOURCE_ROOT; };
+		6101938115B5494F008E5D04 /* g726_40.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = g726_40.c; path = IOTCamera/g726_40.c; sourceTree = SOURCE_ROOT; };
+		6101938215B5494F008E5D04 /* private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = private.h; path = IOTCamera/private.h; sourceTree = SOURCE_ROOT; };
+		610258FE15CB6E250007A553 /* h264.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = h264.h; path = IOTCamera/h264.h; sourceTree = SOURCE_ROOT; };
+		610258FF15CB6E250007A553 /* h264.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = h264.m; path = IOTCamera/h264.m; sourceTree = SOURCE_ROOT; };
+		6108DB8515CB9BCC002966A2 /* libbz2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.1.0.dylib; path = usr/lib/libbz2.1.0.dylib; sourceTree = SDKROOT; };
+		6112B5A915D8E9550018E7A7 /* yuv420torgb24.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = yuv420torgb24.h; path = IOTCamera/yuv420torgb24.h; sourceTree = SOURCE_ROOT; };
+		6112B5AB15D8E96B0018E7A7 /* yuv420torgb24.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = yuv420torgb24.c; path = IOTCamera/yuv420torgb24.c; sourceTree = SOURCE_ROOT; };
+		612B288F15999A29002E82F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		612B292515999D6F002E82F9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		612B292915999EB3002E82F9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		612B293015999FC0002E82F9 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		6136236215D0A96C00CBCB22 /* mpeg4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mpeg4.h; path = IOTCamera/mpeg4.h; sourceTree = SOURCE_ROOT; };
+		6136236315D0A96C00CBCB22 /* mpeg4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = mpeg4.m; path = IOTCamera/mpeg4.m; sourceTree = SOURCE_ROOT; };
+		614AF7AB15A6675F009869D3 /* IOTCamera-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "IOTCamera-Prefix.pch"; path = "IOTCamera/IOTCamera-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		614AF7BF15A667AD009869D3 /* adpcm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = adpcm.cpp; path = IOTCamera/adpcm.cpp; sourceTree = SOURCE_ROOT; };
+		614AF7C015A667AD009869D3 /* adpcm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = adpcm.h; path = IOTCamera/adpcm.h; sourceTree = SOURCE_ROOT; };
+		614AF7C115A667AD009869D3 /* AudioRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioRecorder.h; path = IOTCamera/AudioRecorder.h; sourceTree = SOURCE_ROOT; };
+		614AF7C215A667AD009869D3 /* AudioRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudioRecorder.m; path = IOTCamera/AudioRecorder.m; sourceTree = SOURCE_ROOT; };
+		614AF7C315A667AD009869D3 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Camera.h; path = IOTCamera/Camera.h; sourceTree = SOURCE_ROOT; };
+		614AF7C415A667AD009869D3 /* Camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Camera.m; path = IOTCamera/Camera.m; sourceTree = SOURCE_ROOT; };
+		614AF7C515A667AD009869D3 /* Camera2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Camera2.h; path = IOTCamera/Camera2.h; sourceTree = SOURCE_ROOT; };
+		614AF7C615A667AD009869D3 /* ip_block_fifo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ip_block_fifo.c; path = IOTCamera/ip_block_fifo.c; sourceTree = SOURCE_ROOT; };
+		614AF7C715A667AD009869D3 /* ip_block_fifo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ip_block_fifo.h; path = IOTCamera/ip_block_fifo.h; sourceTree = SOURCE_ROOT; };
+		614AF7C815A667AD009869D3 /* Monitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Monitor.h; path = IOTCamera/Monitor.h; sourceTree = SOURCE_ROOT; };
+		614AF7C915A667AD009869D3 /* Monitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Monitor.m; path = IOTCamera/Monitor.m; sourceTree = SOURCE_ROOT; };
+		614AF7CA15A667AD009869D3 /* OpenALPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenALPlayer.h; path = IOTCamera/OpenALPlayer.h; sourceTree = SOURCE_ROOT; };
+		614AF7CB15A667AD009869D3 /* OpenALPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenALPlayer.m; path = IOTCamera/OpenALPlayer.m; sourceTree = SOURCE_ROOT; };
+		614AF7CC15A667AD009869D3 /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Queue.h; path = IOTCamera/Queue.h; sourceTree = SOURCE_ROOT; };
+		614AF7CD15A667AD009869D3 /* Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Queue.m; path = IOTCamera/Queue.m; sourceTree = SOURCE_ROOT; };
+		614AF7CE15A667AD009869D3 /* AVChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AVChannel.h; path = IOTCamera/AVChannel.h; sourceTree = SOURCE_ROOT; };
+		614AF7CF15A667AD009869D3 /* AVChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AVChannel.m; path = IOTCamera/AVChannel.m; sourceTree = SOURCE_ROOT; };
+		61B948FE15A66B200000BCF8 /* AVFRAMEINFO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AVFRAMEINFO.h; path = IOTCamera/include/AVFRAMEINFO.h; sourceTree = SOURCE_ROOT; };
+		61B948FF15A66B200000BCF8 /* AVIOCTRLDEFs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AVIOCTRLDEFs.h; path = IOTCamera/include/AVIOCTRLDEFs.h; sourceTree = SOURCE_ROOT; };
+		61B9490515A66B200000BCF8 /* platform_Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = platform_Config.h; path = IOTCamera/include/platform_Config.h; sourceTree = SOURCE_ROOT; };
+		61E550A315D9E92600AA6184 /* mpg123.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mpg123.xcodeproj; path = "mpg123-1.13.4/ports/iPhone/mpg123.xcodeproj"; sourceTree = "<group>"; };
+		61E550AC15D9E93600AA6184 /* Speex.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Speex.xcodeproj; path = "speex-1.2rc1/ios/Speex.xcodeproj"; sourceTree = "<group>"; };
+		61E550F315D9F71B00AA6184 /* H264Dec.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = H264Dec.xcodeproj; path = H264Dec/H264Dec.xcodeproj; sourceTree = "<group>"; };
+		61EC09AD1599B9E800BE959E /* IOTCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOTCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		895133661ADB52CA00B2738C /* PFZBRecordingOBJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PFZBRecordingOBJ.h; path = IOTCamera/include/PFZBRecordingOBJ.h; sourceTree = SOURCE_ROOT; };
+		895133671ADB52CA00B2738C /* ZHPFVideoRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHPFVideoRecorder.h; path = IOTCamera/include/ZHPFVideoRecorder.h; sourceTree = SOURCE_ROOT; };
+		897345901AD79F3800500F79 /* g711au.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = g711au.c; path = IOTCamera/g711au.c; sourceTree = SOURCE_ROOT; };
+		897345911AD79F3800500F79 /* g711au.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = g711au.h; path = IOTCamera/g711au.h; sourceTree = SOURCE_ROOT; };
+		B0934FDA1C5675E4000ECB44 /* ZHPFVideoRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHPFVideoRecorder.h; path = IOTCamera/ZHPFVideoRecorder.h; sourceTree = SOURCE_ROOT; };
+		B0934FDB1C5675E4000ECB44 /* ZHPFVideoRecorder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ZHPFVideoRecorder.mm; path = IOTCamera/ZHPFVideoRecorder.mm; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E2A43BA15FEEBE6000A2974 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E2A43BC15FEEBE6000A2974 /* libmpg123.a in Frameworks */,
+				3E2A43BD15FEEBE6000A2974 /* libSpeex.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61EC09AA1599B9E800BE959E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61E550FC15D9F7A400AA6184 /* libH264Dec.a in Frameworks */,
+				61E550C915D9EACB00AA6184 /* libmpg123.a in Frameworks */,
+				61E550CA15D9EACB00AA6184 /* libSpeex.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E2A43D515FEEC0D000A2974 /* IOTCamera_MJ4 */ = {
+			isa = PBXGroup;
+			children = (
+				3E2A43D615FEEC49000A2974 /* IOTCamera_MJ4-Info.plist */,
+			);
+			name = IOTCamera_MJ4;
+			sourceTree = "<group>";
+		};
+		6101936415B548EE008E5D04 /* G726 */ = {
+			isa = PBXGroup;
+			children = (
+				6101937915B5494F008E5D04 /* codec_g726.c */,
+				6101937A15B5494F008E5D04 /* codec_g726.h */,
+				6101937B15B5494F008E5D04 /* g72x.c */,
+				6101937C15B5494F008E5D04 /* g72x.h */,
+				6101937D15B5494F008E5D04 /* g711.c */,
+				6101937E15B5494F008E5D04 /* g726_16.c */,
+				6101937F15B5494F008E5D04 /* g726_24.c */,
+				6101938015B5494F008E5D04 /* g726_32.c */,
+				6101938115B5494F008E5D04 /* g726_40.c */,
+				6101938215B5494F008E5D04 /* private.h */,
+			);
+			name = G726;
+			sourceTree = "<group>";
+		};
+		612B288115999A29002E82F9 = {
+			isa = PBXGroup;
+			children = (
+				3E2A43D515FEEC0D000A2974 /* IOTCamera_MJ4 */,
+				612B29421599A057002E82F9 /* IOTCamera */,
+				612B288E15999A29002E82F9 /* Frameworks */,
+				612B288D15999A29002E82F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		612B288D15999A29002E82F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61EC09AD1599B9E800BE959E /* IOTCamera.framework */,
+				3E2A43D315FEEBE6000A2974 /* IOTCamera_MJ4.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		612B288E15999A29002E82F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61E550F315D9F71B00AA6184 /* H264Dec.xcodeproj */,
+				61E550AC15D9E93600AA6184 /* Speex.xcodeproj */,
+				61E550A315D9E92600AA6184 /* mpg123.xcodeproj */,
+				6108DB8515CB9BCC002966A2 /* libbz2.1.0.dylib */,
+				6101935315B505B4008E5D04 /* AudioToolbox.framework */,
+				6101935115B505AE008E5D04 /* OpenAL.framework */,
+				612B292515999D6F002E82F9 /* CoreGraphics.framework */,
+				612B288F15999A29002E82F9 /* Foundation.framework */,
+				612B292915999EB3002E82F9 /* UIKit.framework */,
+				612B293015999FC0002E82F9 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		612B289115999A29002E82F9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B0934FDA1C5675E4000ECB44 /* ZHPFVideoRecorder.h */,
+				B0934FDB1C5675E4000ECB44 /* ZHPFVideoRecorder.mm */,
+				897345791AD7698E00500F79 /* ADD_Record */,
+				61557F4A15CB6702009D0775 /* Video */,
+				61557F4815CB665B009D0775 /* Audio */,
+				61B948FE15A66B200000BCF8 /* AVFRAMEINFO.h */,
+				61B948FF15A66B200000BCF8 /* AVIOCTRLDEFs.h */,
+				61B9490515A66B200000BCF8 /* platform_Config.h */,
+				614AF7C115A667AD009869D3 /* AudioRecorder.h */,
+				614AF7C215A667AD009869D3 /* AudioRecorder.m */,
+				614AF7C315A667AD009869D3 /* Camera.h */,
+				614AF7C415A667AD009869D3 /* Camera.m */,
+				614AF7C515A667AD009869D3 /* Camera2.h */,
+				614AF7C615A667AD009869D3 /* ip_block_fifo.c */,
+				614AF7C715A667AD009869D3 /* ip_block_fifo.h */,
+				614AF7C815A667AD009869D3 /* Monitor.h */,
+				614AF7C915A667AD009869D3 /* Monitor.m */,
+				614AF7CA15A667AD009869D3 /* OpenALPlayer.h */,
+				614AF7CB15A667AD009869D3 /* OpenALPlayer.m */,
+				614AF7CC15A667AD009869D3 /* Queue.h */,
+				614AF7CD15A667AD009869D3 /* Queue.m */,
+				614AF7CE15A667AD009869D3 /* AVChannel.h */,
+				614AF7CF15A667AD009869D3 /* AVChannel.m */,
+				612B289D15999AAA002E82F9 /* lib */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		612B289D15999AAA002E82F9 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				2AA2FCCD1F0CC2C700A41824 /* ImageBuffInfo.h */,
+				2A2E83801F0CBA3B004DF838 /* IOTCAPIs.h */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		612B29421599A057002E82F9 /* IOTCamera */ = {
+			isa = PBXGroup;
+			children = (
+				61EC09B01599B9E800BE959E /* Supporting Files */,
+				612B289115999A29002E82F9 /* Classes */,
+			);
+			name = IOTCamera;
+			path = IOTCamComponent;
+			sourceTree = "<group>";
+		};
+		61557F4815CB665B009D0775 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				8973458F1AD79F2600500F79 /* G711au */,
+				61557F4915CB6664009D0775 /* ADPCM */,
+				6101936415B548EE008E5D04 /* G726 */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
+		61557F4915CB6664009D0775 /* ADPCM */ = {
+			isa = PBXGroup;
+			children = (
+				614AF7BF15A667AD009869D3 /* adpcm.cpp */,
+				614AF7C015A667AD009869D3 /* adpcm.h */,
+			);
+			name = ADPCM;
+			sourceTree = "<group>";
+		};
+		61557F4A15CB6702009D0775 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				610258FE15CB6E250007A553 /* h264.h */,
+				610258FF15CB6E250007A553 /* h264.m */,
+				6136236215D0A96C00CBCB22 /* mpeg4.h */,
+				6136236315D0A96C00CBCB22 /* mpeg4.m */,
+				6112B5A915D8E9550018E7A7 /* yuv420torgb24.h */,
+				6112B5AB15D8E96B0018E7A7 /* yuv420torgb24.c */,
+			);
+			name = Video;
+			sourceTree = "<group>";
+		};
+		61E550A415D9E92600AA6184 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61E550AB15D9E92600AA6184 /* libmpg123.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61E550AD15D9E93600AA6184 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61E550B415D9E93700AA6184 /* libSpeex.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61E550F415D9F71B00AA6184 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61E550FB15D9F71C00AA6184 /* libH264Dec.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61EC09B01599B9E800BE959E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				614AF7AB15A6675F009869D3 /* IOTCamera-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		897345791AD7698E00500F79 /* ADD_Record */ = {
+			isa = PBXGroup;
+			children = (
+				895133661ADB52CA00B2738C /* PFZBRecordingOBJ.h */,
+				895133671ADB52CA00B2738C /* ZHPFVideoRecorder.h */,
+			);
+			name = ADD_Record;
+			sourceTree = "<group>";
+		};
+		8973458F1AD79F2600500F79 /* G711au */ = {
+			isa = PBXGroup;
+			children = (
+				897345901AD79F3800500F79 /* g711au.c */,
+				897345911AD79F3800500F79 /* g711au.h */,
+			);
+			name = G711au;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3E2A43BF15FEEBE6000A2974 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E2A43C015FEEBE6000A2974 /* Camera.h in Headers */,
+				3E2A43C115FEEBE6000A2974 /* Monitor.h in Headers */,
+				3E2A43C215FEEBE6000A2974 /* AVFRAMEINFO.h in Headers */,
+				3E2A43C315FEEBE6000A2974 /* AVIOCTRLDEFs.h in Headers */,
+				3E2A43C415FEEBE6000A2974 /* IOTCamera-Prefix.pch in Headers */,
+				3E2A43C515FEEBE6000A2974 /* adpcm.h in Headers */,
+				3E2A43C615FEEBE6000A2974 /* AudioRecorder.h in Headers */,
+				3E2A43C715FEEBE6000A2974 /* Camera2.h in Headers */,
+				3E2A43C815FEEBE6000A2974 /* ip_block_fifo.h in Headers */,
+				3E2A43C915FEEBE6000A2974 /* OpenALPlayer.h in Headers */,
+				3E2A43CA15FEEBE6000A2974 /* Queue.h in Headers */,
+				3E2A43CB15FEEBE6000A2974 /* AVChannel.h in Headers */,
+				3E2A43CC15FEEBE6000A2974 /* platform_Config.h in Headers */,
+				3E2A43CD15FEEBE6000A2974 /* codec_g726.h in Headers */,
+				3E2A43CE15FEEBE6000A2974 /* g72x.h in Headers */,
+				3E2A43CF15FEEBE6000A2974 /* private.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61EC09E11599BE2000BE959E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AA2FCCE1F0CC2C700A41824 /* ImageBuffInfo.h in Headers */,
+				2A2E83811F0CBA3B004DF838 /* IOTCAPIs.h in Headers */,
+				614AF7D415A667AD009869D3 /* Camera.h in Headers */,
+				614AF7D915A667AD009869D3 /* Monitor.h in Headers */,
+				B0934FDC1C5675E4000ECB44 /* ZHPFVideoRecorder.h in Headers */,
+				895133681ADB52CA00B2738C /* PFZBRecordingOBJ.h in Headers */,
+				61B9490715A66B210000BCF8 /* AVFRAMEINFO.h in Headers */,
+				61B9490815A66B210000BCF8 /* AVIOCTRLDEFs.h in Headers */,
+				614AF7AC15A6675F009869D3 /* IOTCamera-Prefix.pch in Headers */,
+				614AF7D115A667AD009869D3 /* adpcm.h in Headers */,
+				614AF7D215A667AD009869D3 /* AudioRecorder.h in Headers */,
+				614AF7D615A667AD009869D3 /* Camera2.h in Headers */,
+				614AF7D815A667AD009869D3 /* ip_block_fifo.h in Headers */,
+				897345931AD79F3800500F79 /* g711au.h in Headers */,
+				614AF7DB15A667AD009869D3 /* OpenALPlayer.h in Headers */,
+				614AF7DD15A667AD009869D3 /* Queue.h in Headers */,
+				614AF7DF15A667AD009869D3 /* AVChannel.h in Headers */,
+				61B9490E15A66B210000BCF8 /* platform_Config.h in Headers */,
+				6101938415B5494F008E5D04 /* codec_g726.h in Headers */,
+				895133691ADB52CA00B2738C /* ZHPFVideoRecorder.h in Headers */,
+				6101938615B5494F008E5D04 /* g72x.h in Headers */,
+				6101938C15B5494F008E5D04 /* private.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3E2A43A915FEEBE6000A2974 /* IOTCamera_MJ4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E2A43D015FEEBE6000A2974 /* Build configuration list for PBXNativeTarget "IOTCamera_MJ4" */;
+			buildPhases = (
+				3E2A43AA15FEEBE6000A2974 /* Sources */,
+				3E2A43BA15FEEBE6000A2974 /* Frameworks */,
+				3E2A43BE15FEEBE6000A2974 /* Resources */,
+				3E2A43BF15FEEBE6000A2974 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E2A43DA15FEECD9000A2974 /* PBXTargetDependency */,
+				3E2A43D815FEECD4000A2974 /* PBXTargetDependency */,
+			);
+			name = IOTCamera_MJ4;
+			productName = IOTCamComponent;
+			productReference = 3E2A43D315FEEBE6000A2974 /* IOTCamera_MJ4.framework */;
+			productType = "com.apple.product-type.bundle";
+		};
+		61EC09AC1599B9E800BE959E /* IOTCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61EC09B61599B9E800BE959E /* Build configuration list for PBXNativeTarget "IOTCamera" */;
+			buildPhases = (
+				61EC09A91599B9E800BE959E /* Sources */,
+				61EC09AA1599B9E800BE959E /* Frameworks */,
+				61EC09AB1599B9E800BE959E /* Resources */,
+				61EC09E11599BE2000BE959E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E2A43E015FEECE6000A2974 /* PBXTargetDependency */,
+				3E2A43DE15FEECE1000A2974 /* PBXTargetDependency */,
+				3E2A43DC15FEECDE000A2974 /* PBXTargetDependency */,
+			);
+			name = IOTCamera;
+			productName = IOTCamComponent;
+			productReference = 61EC09AD1599B9E800BE959E /* IOTCamera.framework */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		612B288315999A29002E82F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+			};
+			buildConfigurationList = 612B288615999A29002E82F9 /* Build configuration list for PBXProject "IOTCamera" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 612B288115999A29002E82F9;
+			productRefGroup = 612B288D15999A29002E82F9 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 61E550F415D9F71B00AA6184 /* Products */;
+					ProjectRef = 61E550F315D9F71B00AA6184 /* H264Dec.xcodeproj */;
+				},
+				{
+					ProductGroup = 61E550A415D9E92600AA6184 /* Products */;
+					ProjectRef = 61E550A315D9E92600AA6184 /* mpg123.xcodeproj */;
+				},
+				{
+					ProductGroup = 61E550AD15D9E93600AA6184 /* Products */;
+					ProjectRef = 61E550AC15D9E93600AA6184 /* Speex.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				61EC09AC1599B9E800BE959E /* IOTCamera */,
+				3E2A43A915FEEBE6000A2974 /* IOTCamera_MJ4 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		61E550AB15D9E92600AA6184 /* libmpg123.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libmpg123.a;
+			remoteRef = 61E550AA15D9E92600AA6184 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		61E550B415D9E93700AA6184 /* libSpeex.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSpeex.a;
+			remoteRef = 61E550B315D9E93700AA6184 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		61E550FB15D9F71C00AA6184 /* libH264Dec.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libH264Dec.a;
+			remoteRef = 61E550FA15D9F71C00AA6184 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E2A43BE15FEEBE6000A2974 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61EC09AB1599B9E800BE959E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E2A43AA15FEEBE6000A2974 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E2A43AB15FEEBE6000A2974 /* adpcm.cpp in Sources */,
+				3E2A43AC15FEEBE6000A2974 /* AudioRecorder.m in Sources */,
+				3E2A43AD15FEEBE6000A2974 /* Camera.m in Sources */,
+				3E2A43AE15FEEBE6000A2974 /* ip_block_fifo.c in Sources */,
+				3E2A43AF15FEEBE6000A2974 /* Monitor.m in Sources */,
+				3E2A43B015FEEBE6000A2974 /* OpenALPlayer.m in Sources */,
+				3E2A43B115FEEBE6000A2974 /* Queue.m in Sources */,
+				3E2A43B215FEEBE6000A2974 /* AVChannel.m in Sources */,
+				3E2A43B315FEEBE6000A2974 /* codec_g726.c in Sources */,
+				3E2A43B415FEEBE6000A2974 /* g72x.c in Sources */,
+				3E2A43B515FEEBE6000A2974 /* g711.c in Sources */,
+				3E2A43B615FEEBE6000A2974 /* g726_16.c in Sources */,
+				3E2A43B715FEEBE6000A2974 /* g726_24.c in Sources */,
+				3E2A43B815FEEBE6000A2974 /* g726_32.c in Sources */,
+				3E2A43B915FEEBE6000A2974 /* g726_40.c in Sources */,
+				3E8E7E0A15FF23CB00B4EE82 /* h264.m in Sources */,
+				3E8E7E0B15FF23CE00B4EE82 /* mpeg4.m in Sources */,
+				3E8E7E5D1606CE0F00B4EE82 /* yuv420torgb24.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61EC09A91599B9E800BE959E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				614AF7D015A667AD009869D3 /* adpcm.cpp in Sources */,
+				614AF7D315A667AD009869D3 /* AudioRecorder.m in Sources */,
+				614AF7D515A667AD009869D3 /* Camera.m in Sources */,
+				B0934FDD1C5675E4000ECB44 /* ZHPFVideoRecorder.mm in Sources */,
+				614AF7D715A667AD009869D3 /* ip_block_fifo.c in Sources */,
+				897345921AD79F3800500F79 /* g711au.c in Sources */,
+				614AF7DA15A667AD009869D3 /* Monitor.m in Sources */,
+				614AF7DC15A667AD009869D3 /* OpenALPlayer.m in Sources */,
+				614AF7DE15A667AD009869D3 /* Queue.m in Sources */,
+				614AF7E015A667AD009869D3 /* AVChannel.m in Sources */,
+				6101938315B5494F008E5D04 /* codec_g726.c in Sources */,
+				6101938515B5494F008E5D04 /* g72x.c in Sources */,
+				6101938715B5494F008E5D04 /* g711.c in Sources */,
+				6101938815B5494F008E5D04 /* g726_16.c in Sources */,
+				6101938915B5494F008E5D04 /* g726_24.c in Sources */,
+				6101938A15B5494F008E5D04 /* g726_32.c in Sources */,
+				6101938B15B5494F008E5D04 /* g726_40.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E2A43D815FEECD4000A2974 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Speex;
+			targetProxy = 3E2A43D715FEECD4000A2974 /* PBXContainerItemProxy */;
+		};
+		3E2A43DA15FEECD9000A2974 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = mpg123;
+			targetProxy = 3E2A43D915FEECD9000A2974 /* PBXContainerItemProxy */;
+		};
+		3E2A43DC15FEECDE000A2974 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Speex;
+			targetProxy = 3E2A43DB15FEECDE000A2974 /* PBXContainerItemProxy */;
+		};
+		3E2A43DE15FEECE1000A2974 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = mpg123;
+			targetProxy = 3E2A43DD15FEECE1000A2974 /* PBXContainerItemProxy */;
+		};
+		3E2A43E015FEECE6000A2974 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = H264Dec;
+			targetProxy = 3E2A43DF15FEECE6000A2974 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3E2A43D115FEEBE6000A2974 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = NO;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = ../IOTCamViewer/IOTCamViewer/lib/;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IOTCamera/IOTCamera-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"ffmpeg-0.9.2/",
+				);
+				INFOPLIST_FILE = "IOTCamera_MJ4/IOTCamera_MJ4-Info.plist";
+				INSTALL_PATH = "/${CONFIGURATION}-${PLATFORM_NAME}";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"ffmpeg-0.9.2/armv7",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DDEBUG",
+					"-DMJ4",
+				);
+				PRODUCT_NAME = IOTCamera_MJ4;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		3E2A43D215FEEBE6000A2974 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = ../IOTCamViewer/IOTCamViewer/lib/;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IOTCamera/IOTCamera-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"ffmpeg-0.9.2/",
+				);
+				INFOPLIST_FILE = "IOTCamera_MJ4/IOTCamera_MJ4-Info.plist";
+				INSTALL_PATH = "/${CONFIGURATION}-${PLATFORM_NAME}";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"ffmpeg-0.9.2/armv7",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-DMJ4";
+				PRODUCT_NAME = IOTCamera_MJ4;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		612B289715999A29002E82F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"speex-1.2rc1/include",
+					"mpg123-1.13.4/src/libmpg123",
+					IOTCamera/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = NO;
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Debug;
+		};
+		612B289815999A29002E82F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"speex-1.2rc1/include",
+					"mpg123-1.13.4/src/libmpg123",
+					IOTCamera/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = NO;
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Release;
+		};
+		61EC09B71599B9E800BE959E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = NO;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = ../libs;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IOTCamera/IOTCamera-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					H264Dec/H264Dec,
+					"ffmpeg-0.9.2/",
+				);
+				INFOPLIST_FILE = "IOTCamera/IOTCamera-Info.plist";
+				INSTALL_PATH = "/${CONFIGURATION}-${PLATFORM_NAME}";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IOTCamera",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DDEBUG";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				VALID_ARCHS = "armv7 armv7s arm64";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		61EC09B81599B9E800BE959E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = ../libs;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IOTCamera/IOTCamera-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					H264Dec/H264Dec,
+					"ffmpeg-0.9.2/",
+				);
+				INFOPLIST_FILE = "IOTCamera/IOTCamera-Info.plist";
+				INSTALL_PATH = "/${CONFIGURATION}-${PLATFORM_NAME}";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IOTCamera",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				VALID_ARCHS = "armv7 armv7s arm64";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E2A43D015FEEBE6000A2974 /* Build configuration list for PBXNativeTarget "IOTCamera_MJ4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E2A43D115FEEBE6000A2974 /* Debug */,
+				3E2A43D215FEEBE6000A2974 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		612B288615999A29002E82F9 /* Build configuration list for PBXProject "IOTCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				612B289715999A29002E82F9 /* Debug */,
+				612B289815999A29002E82F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		61EC09B61599B9E800BE959E /* Build configuration list for PBXNativeTarget "IOTCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61EC09B71599B9E800BE959E /* Debug */,
+				61EC09B81599B9E800BE959E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 612B288315999A29002E82F9 /* Project object */;
+}

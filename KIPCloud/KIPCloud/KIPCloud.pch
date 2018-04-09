@@ -1,0 +1,32 @@
+//
+//  KIPCloud.pch
+//  KIPCloud
+//
+//  Created by 孔雨露 on 2017/7/6.
+//  Copyright © 2017年 孔雨露. All rights reserved.
+//
+
+#ifndef KIPCloud_pch
+#define KIPCloud_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <Availability.h>
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+
+
+
+#import "YLAppDefine.h"
+#import "Masonry.h"
+#import "YLData.h"
+#import "YLGlobal.h"
+
+#import "YLBaseController.h"
+#import "YLBaseTableViewController.h"
+#import "YLComFun.h"
+
+
+#endif /* KIPCloud_pch */

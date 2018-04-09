@@ -1,0 +1,393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		61B854C614553F9300EC42D4 /* compat.c in Sources */ = {isa = PBXBuildFile; fileRef = 61B854C514553F9300EC42D4 /* compat.c */; };
+		D852EA8614502F3B003BF6C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D852EA8514502F3B003BF6C4 /* Foundation.framework */; };
+		D8A72FEF1454F8E0005BFB44 /* dct64.c in Sources */ = {isa = PBXBuildFile; fileRef = D8A72F821454F8E0005BFB44 /* dct64.c */; };
+		D8A72FF51454F8E0005BFB44 /* equalizer.c in Sources */ = {isa = PBXBuildFile; fileRef = D8A72F881454F8E0005BFB44 /* equalizer.c */; };
+		D8A72FF71454F8E0005BFB44 /* format.c in Sources */ = {isa = PBXBuildFile; fileRef = D8A72F8A1454F8E0005BFB44 /* format.c */; };
+		D8A72FF81454F8E0005BFB44 /* frame.c in Sources */ = {isa = PBXBuildFile; fileRef = D8A72F8B1454F8E0005BFB44 /* frame.c */; };
+		D8A72FFE1454F8E0005BFB44 /* icy.c in Sources */ = {isa = PBXBuildFile; fileRef = D8A72F911454F8E0005BFB44 /* icy.c */; };
+		D8A730001454F8E0005BFB44 /* icy2utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = D8A72F931454F8E0005BFB44 /* icy2utf8.c */; };
+		D8A730021454F8E0005BFB44 /* id3.c in Sources */ = {isa = PBXBuildFile; fileRef = D8A72F951454F8E0005BFB44 /* id3.c */; };
+		D8A7300A1454F8E0005BFB44 /* layer1.c in Sources */ = {isa = PBXBuildFile; fileRef = D8A72F9D1454F8E0005BFB44 /* layer1.c */; };
+		D8A7300B1454F8E0005BFB44 /* layer2.c in Sources */ = {isa = PBXBuildFile; fileRef = D8A72F9E1454F8E0005BFB44 /* layer2.c */; };
+		D8A7300C1454F8E0005BFB44 /* layer3.c in Sources */ = {isa = PBXBuildFile; fileRef = D8A72F9F1454F8E0005BFB44 /* layer3.c */; };
+		D8A7300F1454F8E0005BFB44 /* libmpg123.c in Sources */ = {isa = PBXBuildFile; fileRef = D8A72FA21454F8E0005BFB44 /* libmpg123.c */; };
+		D8A730131454F8E0005BFB44 /* optimize.c in Sources */ = {isa = PBXBuildFile; fileRef = D8A72FA91454F8E0005BFB44 /* optimize.c */; };
+		D8A730151454F8E0005BFB44 /* parse.c in Sources */ = {isa = PBXBuildFile; fileRef = D8A72FAB1454F8E0005BFB44 /* parse.c */; };
+		D8A730181454F8E0005BFB44 /* readers.c in Sources */ = {isa = PBXBuildFile; fileRef = D8A72FAE1454F8E0005BFB44 /* readers.c */; };
+		D8A7301A1454F8E0005BFB44 /* stringbuf.c in Sources */ = {isa = PBXBuildFile; fileRef = D8A72FB01454F8E0005BFB44 /* stringbuf.c */; };
+		D8A7302C1454F8E0005BFB44 /* synth_real.c in Sources */ = {isa = PBXBuildFile; fileRef = D8A72FC21454F8E0005BFB44 /* synth_real.c */; };
+		D8A7302D1454F8E0005BFB44 /* synth_s32.c in Sources */ = {isa = PBXBuildFile; fileRef = D8A72FC31454F8E0005BFB44 /* synth_s32.c */; };
+		D8A730421454F8E0005BFB44 /* synth.c in Sources */ = {isa = PBXBuildFile; fileRef = D8A72FD81454F8E0005BFB44 /* synth.c */; };
+		D8A730461454F8E0005BFB44 /* tabinit.c in Sources */ = {isa = PBXBuildFile; fileRef = D8A72FDC1454F8E0005BFB44 /* tabinit.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		61B854C514553F9300EC42D4 /* compat.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = compat.c; path = ../../../src/libmpg123/compat.c; sourceTree = "<group>"; };
+		D852EA8214502F3B003BF6C4 /* libmpg123.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmpg123.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D852EA8514502F3B003BF6C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D852EA8914502F3B003BF6C4 /* mpg123-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mpg123-Prefix.pch"; sourceTree = "<group>"; };
+		D8A72F821454F8E0005BFB44 /* dct64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = dct64.c; path = ../../../src/libmpg123/dct64.c; sourceTree = "<group>"; };
+		D8A72F881454F8E0005BFB44 /* equalizer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = equalizer.c; path = ../../../src/libmpg123/equalizer.c; sourceTree = "<group>"; };
+		D8A72F8A1454F8E0005BFB44 /* format.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = format.c; path = ../../../src/libmpg123/format.c; sourceTree = "<group>"; };
+		D8A72F8B1454F8E0005BFB44 /* frame.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = frame.c; path = ../../../src/libmpg123/frame.c; sourceTree = "<group>"; };
+		D8A72F911454F8E0005BFB44 /* icy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = icy.c; path = ../../../src/libmpg123/icy.c; sourceTree = "<group>"; };
+		D8A72F931454F8E0005BFB44 /* icy2utf8.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = icy2utf8.c; path = ../../../src/libmpg123/icy2utf8.c; sourceTree = "<group>"; };
+		D8A72F951454F8E0005BFB44 /* id3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = id3.c; path = ../../../src/libmpg123/id3.c; sourceTree = "<group>"; };
+		D8A72F9D1454F8E0005BFB44 /* layer1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = layer1.c; path = ../../../src/libmpg123/layer1.c; sourceTree = "<group>"; };
+		D8A72F9E1454F8E0005BFB44 /* layer2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = layer2.c; path = ../../../src/libmpg123/layer2.c; sourceTree = "<group>"; };
+		D8A72F9F1454F8E0005BFB44 /* layer3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = layer3.c; path = ../../../src/libmpg123/layer3.c; sourceTree = "<group>"; };
+		D8A72FA21454F8E0005BFB44 /* libmpg123.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = libmpg123.c; path = ../../../src/libmpg123/libmpg123.c; sourceTree = "<group>"; };
+		D8A72FA91454F8E0005BFB44 /* optimize.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = optimize.c; path = ../../../src/libmpg123/optimize.c; sourceTree = "<group>"; };
+		D8A72FAB1454F8E0005BFB44 /* parse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = parse.c; path = ../../../src/libmpg123/parse.c; sourceTree = "<group>"; };
+		D8A72FAE1454F8E0005BFB44 /* readers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = readers.c; path = ../../../src/libmpg123/readers.c; sourceTree = "<group>"; };
+		D8A72FB01454F8E0005BFB44 /* stringbuf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = stringbuf.c; path = ../../../src/libmpg123/stringbuf.c; sourceTree = "<group>"; };
+		D8A72FC21454F8E0005BFB44 /* synth_real.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = synth_real.c; path = ../../../src/libmpg123/synth_real.c; sourceTree = "<group>"; };
+		D8A72FC31454F8E0005BFB44 /* synth_s32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = synth_s32.c; path = ../../../src/libmpg123/synth_s32.c; sourceTree = "<group>"; };
+		D8A72FD81454F8E0005BFB44 /* synth.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = synth.c; path = ../../../src/libmpg123/synth.c; sourceTree = "<group>"; };
+		D8A72FDC1454F8E0005BFB44 /* tabinit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tabinit.c; path = ../../../src/libmpg123/tabinit.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D852EA7F14502F3B003BF6C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D852EA8614502F3B003BF6C4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D852EA7714502F3B003BF6C4 = {
+			isa = PBXGroup;
+			children = (
+				D852EA8714502F3B003BF6C4 /* mpg123 */,
+				D852EA8414502F3B003BF6C4 /* Frameworks */,
+				D852EA8314502F3B003BF6C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D852EA8314502F3B003BF6C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D852EA8214502F3B003BF6C4 /* libmpg123.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D852EA8414502F3B003BF6C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D852EA8514502F3B003BF6C4 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D852EA8714502F3B003BF6C4 /* mpg123 */ = {
+			isa = PBXGroup;
+			children = (
+				61B854C514553F9300EC42D4 /* compat.c */,
+				D8A72F821454F8E0005BFB44 /* dct64.c */,
+				D8A72F881454F8E0005BFB44 /* equalizer.c */,
+				D8A72F8A1454F8E0005BFB44 /* format.c */,
+				D8A72F8B1454F8E0005BFB44 /* frame.c */,
+				D8A72F911454F8E0005BFB44 /* icy.c */,
+				D8A72F931454F8E0005BFB44 /* icy2utf8.c */,
+				D8A72F951454F8E0005BFB44 /* id3.c */,
+				D8A72F9D1454F8E0005BFB44 /* layer1.c */,
+				D8A72F9E1454F8E0005BFB44 /* layer2.c */,
+				D8A72F9F1454F8E0005BFB44 /* layer3.c */,
+				D8A72FA21454F8E0005BFB44 /* libmpg123.c */,
+				D8A72FA91454F8E0005BFB44 /* optimize.c */,
+				D8A72FAB1454F8E0005BFB44 /* parse.c */,
+				D8A72FAE1454F8E0005BFB44 /* readers.c */,
+				D8A72FB01454F8E0005BFB44 /* stringbuf.c */,
+				D8A72FC21454F8E0005BFB44 /* synth_real.c */,
+				D8A72FC31454F8E0005BFB44 /* synth_s32.c */,
+				D8A72FD81454F8E0005BFB44 /* synth.c */,
+				D8A72FDC1454F8E0005BFB44 /* tabinit.c */,
+				D852EA8814502F3B003BF6C4 /* Supporting Files */,
+			);
+			path = mpg123;
+			sourceTree = "<group>";
+		};
+		D852EA8814502F3B003BF6C4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D852EA8914502F3B003BF6C4 /* mpg123-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D852EA8014502F3B003BF6C4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D852EA8114502F3B003BF6C4 /* mpg123 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D852EA8F14502F3B003BF6C4 /* Build configuration list for PBXNativeTarget "mpg123" */;
+			buildPhases = (
+				D852EA7E14502F3B003BF6C4 /* Sources */,
+				D852EA7F14502F3B003BF6C4 /* Frameworks */,
+				D852EA8014502F3B003BF6C4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mpg123;
+			productName = mpg123;
+			productReference = D852EA8214502F3B003BF6C4 /* libmpg123.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D852EA7914502F3B003BF6C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+			};
+			buildConfigurationList = D852EA7C14502F3B003BF6C4 /* Build configuration list for PBXProject "mpg123" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D852EA7714502F3B003BF6C4;
+			productRefGroup = D852EA8314502F3B003BF6C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D852EA8114502F3B003BF6C4 /* mpg123 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D852EA7E14502F3B003BF6C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8A72FEF1454F8E0005BFB44 /* dct64.c in Sources */,
+				D8A72FF51454F8E0005BFB44 /* equalizer.c in Sources */,
+				D8A72FF71454F8E0005BFB44 /* format.c in Sources */,
+				D8A72FF81454F8E0005BFB44 /* frame.c in Sources */,
+				D8A72FFE1454F8E0005BFB44 /* icy.c in Sources */,
+				D8A730001454F8E0005BFB44 /* icy2utf8.c in Sources */,
+				D8A730021454F8E0005BFB44 /* id3.c in Sources */,
+				D8A7300A1454F8E0005BFB44 /* layer1.c in Sources */,
+				D8A7300B1454F8E0005BFB44 /* layer2.c in Sources */,
+				D8A7300C1454F8E0005BFB44 /* layer3.c in Sources */,
+				D8A7300F1454F8E0005BFB44 /* libmpg123.c in Sources */,
+				D8A730131454F8E0005BFB44 /* optimize.c in Sources */,
+				D8A730151454F8E0005BFB44 /* parse.c in Sources */,
+				D8A730181454F8E0005BFB44 /* readers.c in Sources */,
+				D8A7301A1454F8E0005BFB44 /* stringbuf.c in Sources */,
+				D8A7302C1454F8E0005BFB44 /* synth_real.c in Sources */,
+				D8A7302D1454F8E0005BFB44 /* synth_s32.c in Sources */,
+				D8A730421454F8E0005BFB44 /* synth.c in Sources */,
+				D8A730461454F8E0005BFB44 /* tabinit.c in Sources */,
+				61B854C614553F9300EC42D4 /* compat.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D852EA8D14502F3B003BF6C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D852EA8E14502F3B003BF6C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D852EA9014502F3B003BF6C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/mpg123.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "mpg123/mpg123-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					HAVE_CONFIG_H,
+					"DEBUG=1",
+					"$(inherited)",
+					FPM_ARM,
+					HAVE_STDLIB_H,
+					HAVE_STRERROR,
+					HAVE_SYS_TYPES_H,
+					OPT_GENERIC,
+					NO_8BIT,
+					NO_NTOM,
+				);
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					HAVE_CONFIG_H,
+					"DEBUG=1",
+					"$(inherited)",
+					FPM_ARM,
+					HAVE_STDLIB_H,
+					HAVE_STRERROR,
+					HAVE_SYS_TYPES_H,
+					OPT_GENERIC,
+					NO_8BIT,
+					NO_NTOM,
+				);
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
+					HAVE_CONFIG_H,
+					"$(inherited)",
+					FPM_ARM,
+					HAVE_STDLIB_H,
+					HAVE_STRERROR,
+					HAVE_SYS_TYPES_H,
+					OPT_GENERIC,
+					NO_8BIT,
+					NO_NTOM,
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-ffast-math";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../src/libmpg123 ./**";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "../../src/libmpg123 ./**";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Debug;
+		};
+		D852EA9114502F3B003BF6C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/mpg123.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "mpg123/mpg123-Prefix.pch";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
+					HAVE_CONFIG_H,
+					"$(inherited)",
+					FPM_ARM,
+					HAVE_STDLIB_H,
+					HAVE_STRERROR,
+					HAVE_SYS_TYPES_H,
+					OPT_GENERIC,
+					NO_8BIT,
+					NO_NTOM,
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-ffast-math";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "../../src/libmpg123 ./**";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D852EA7C14502F3B003BF6C4 /* Build configuration list for PBXProject "mpg123" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D852EA8D14502F3B003BF6C4 /* Debug */,
+				D852EA8E14502F3B003BF6C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D852EA8F14502F3B003BF6C4 /* Build configuration list for PBXNativeTarget "mpg123" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D852EA9014502F3B003BF6C4 /* Debug */,
+				D852EA9114502F3B003BF6C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D852EA7914502F3B003BF6C4 /* Project object */;
+}

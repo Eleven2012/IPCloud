@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6DB5DF9A-1988-4B0C-9752-ACCB2033CF4A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>H264Dec</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>b3a08428-0eb2-fa4a-bd02-998abcf981cd++1249</key>
+		<string>https://192.168.0.200:8443/svn/IOS/OEM/OEM_Life%2520Online</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>IOTCamera/H264Dec/H264Dec.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>b3a08428-0eb2-fa4a-bd02-998abcf981cd++1249</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>b3a08428-0eb2-fa4a-bd02-998abcf981cd++1249</key>
+		<string>https://192.168.0.200:8443/svn/IOS</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://192.168.0.200:8443/svn/IOS/OEM/OEM_Life%2520Online/IOTCamera/H264Dec/H264Dec.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>b3a08428-0eb2-fa4a-bd02-998abcf981cd++1249</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>b3a08428-0eb2-fa4a-bd02-998abcf981cd++1249</string>
+			<key>IDESourceControlWCCName</key>
+			<string>OEM_Life%20Online</string>
+		</dict>
+	</array>
+</dict>
+</plist>

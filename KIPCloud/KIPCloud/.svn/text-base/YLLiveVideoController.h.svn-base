@@ -1,0 +1,13 @@
+//
+//  YLLiveVideoController.h
+//  KIPCloud
+//
+//  Created by 孔雨露 on 2017/7/21.
+//  Copyright © 2017年 孔雨露. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface YLLiveVideoController : YLBaseController
+@property (nonatomic, strong) MyCamera *camera;
+@end

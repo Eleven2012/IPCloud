@@ -1,0 +1,77 @@
+10
+
+dir
+11312
+svn://KongYulu@192.168.1.117/devrepos/Trunk/08_App_iOS/IOS_IPCloud/KIOTCamera/mpg123-1.13.4/ports/MSVC++/2008
+svn://KongYulu@192.168.1.117/devrepos
+
+
+
+2017-07-28T01:21:21.822553Z
+11296
+KongYulu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3c9334a5-ceec-4cd6-b7b5-e5674bef15c6
+
+libmpg123
+dir
+
+dump_seekindex
+dir
+
+scan
+dir
+
+mpg123.sln
+file
+
+
+
+
+2017-07-31T01:10:40.000000Z
+fedd523e9b7ba5856c0546112335d3fb
+2017-07-28T01:21:21.822553Z
+11296
+KongYulu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2781
+
+mpglib
+dir
+
+feedseek
+dir
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D5241A3A-25A3-4CC0-887E-082B897D27E0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>IOTCamera</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>31FE6EE7B21D0F0AE2B83F1D7B1E18F7E25503F8</key>
+		<string>https://bitbucket.org/tutk/iotcamera_ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>IOTCamera.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>31FE6EE7B21D0F0AE2B83F1D7B1E18F7E25503F8</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/tutk/iotcamera_ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>31FE6EE7B21D0F0AE2B83F1D7B1E18F7E25503F8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>31FE6EE7B21D0F0AE2B83F1D7B1E18F7E25503F8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>IOTCamera</string>
+		</dict>
+	</array>
+</dict>
+</plist>
